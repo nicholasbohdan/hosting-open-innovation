@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import React from 'react';
-import styles from '../../../styles/ideaCatalog.module.css';
+import styles from '../../../styles/IdeaCatalog.module.css';
 import Header from '../../../components/header';
 
 export default function DetailIdea() {

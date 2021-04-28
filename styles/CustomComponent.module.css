@@ -1,0 +1,10 @@
+.listRadioButton {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+.inputField{
+    width: 100%;
+    padding: 12px 0px 12px 6px;
+    margin: 12px 0px 12px 0px;
+  }

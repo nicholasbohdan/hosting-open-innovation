@@ -1,0 +1,23 @@
+.header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .menuHeader {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+  }
+  
+.menuData {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left
+  }

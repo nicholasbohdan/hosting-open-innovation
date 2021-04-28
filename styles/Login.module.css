@@ -1,0 +1,74 @@
+
+.inputLogin{
+  width: 97%;
+  padding: 12px 0px 12px 6px;
+  margin: 12px 0px 12px 0px;
+}
+
+.forgetPassword{
+  padding-left: 12;
+  text-decoration: underline;
+  text-align: center;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .grid_container {
+    display: grid;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    grid-template-columns: 50% 50%;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .loginLeft {
+    /* margin-top: 8vh;
+    padding: 1vh; */
+    background-color: #c4c4c4;
+    height: 100%;
+    text-align: center;
+  }
+  .loginRight {
+    background-color: #ffffff;
+    padding: 120px 20px 20px 20px;
+    /* height: 100%; */
+  }
+  .buttonLogin{
+    width: 100%;
+    padding: 12px;
+    margin: 2px 12px 2px 12px;
+  }
+  .fieldLogin{
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .grid_container {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 100%;
+    min-height: 100%;
+  }
+  .loginLeft {
+    background-color: #c4c4c4;
+    height: 100%;
+    padding: 70px;
+    text-align: center;
+  }
+  .loginRight {
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
+  }
+  .buttonLogin{
+    width: 100%;
+    padding: 12px;
+    margin: 12px 12px 12px 0px;
+  }
+  .fieldLogin{
+    width: 100%;
+  }
+}

@@ -1,0 +1,153 @@
+.homeIdeaCatalog {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  grid-template-columns: 20% 80%;
+  gap: 10px;
+  min-height: 100%;
+}
+
+.homeIdeaCatalogSubHeader {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  grid-template-columns: 55% 20% 20%;
+  min-height: 100%;
+}
+
+.homeIdeaCatalogBorder {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.submitIdeaButton {
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: #434242;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 17px;
+}
+
+.submitIdeaButton:focus {
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.fieldSearch {
+  display: grid;
+  /* width: 100%; */
+  grid-template-columns: auto auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+.trendingIdeasListContainer {
+  width: 100%;
+  /* max-width: 300px; */
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-gap: 10px;
+  /* width: 200px; */
+  grid-template-columns: auto auto auto;
+  /* white-space: nowrap;
+  height: 200px; */
+  /* grid-template-columns: auto auto; */
+}
+
+.trendingIdeasList {
+  width: 100%;
+  max-width: 300px;
+}
+
+.input_field {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Submit Ideas */
+
+.submitIdeasContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Detail Ideas */
+
+.ideaCatalogDetailContainer {
+  padding-top: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 75% 25%;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* .indentityIdea {
+  display: flex;
+  width: 100%;
+} */
+
+.coverImgContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.coverImg {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 700px;
+}
+
+.containerTopics {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.itemTopics {
+  /* width: 100%; */
+  text-align: center;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  padding: 4px;
+  margin: 4px;
+}
+
+.containerAttachment {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.itemAttachment {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  padding: 4px;
+  margin: 4px;
+}
+
+.teamMemberContainer {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 10px;
+}

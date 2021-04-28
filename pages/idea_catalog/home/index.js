@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../../../styles/ideaCatalog.module.css';
+import styles from '../../../styles/IdeaCatalog.module.css';
 import Header from '../../../components/header';
 import FilterByTopic from '../../../components/filterbytopic';
 

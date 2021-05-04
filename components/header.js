@@ -6,7 +6,7 @@ export default function Header(){
         <ul className={styles.header}>
             <div className={styles.menuHeader}>
                 <div>
-                    <li className={styles.menuData}><a href="/home">Home</a></li>
+                    <li className={styles.menuData}><a href="/">Home</a></li>
                     <li className={styles.menuData}><a href="/idea_catalog/home">Idea Catalog</a></li>
                     <li className={styles.menuData}><a href="#contact">Konvensi Inovasi</a></li>
                     <li className={styles.menuData}><a href="#about">Inbox</a></li>

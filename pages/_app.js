@@ -1,15 +1,12 @@
 import '../styles/globals.css'
 import '../styles/Login.module.css'
-import { Provider } from 'react-redux';
-import configureStore from '../store/ConfigStore';
-
-const store = configureStore();
+import { Store } from "../store";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Provider store={store}>
+    <Store>
       <Component {...pageProps} />
-    </Provider>
+    </Store>
   )
 }
 

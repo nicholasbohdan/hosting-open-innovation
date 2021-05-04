@@ -136,30 +136,26 @@
 
 .homeInformation {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 25% 25% 25% 25%;
   text-align: center;
 }
 
 .homeInformationItem1 {
-  border: 1px solid black;
-  border-radius: 24px 0px 0px 0px;
-  background-color: #a4a4a4;
+  border: 1px solid transparent;
+  border-radius: 30px 0px 0px 30px;
+  background-color: #306964;
 }
 
 .homeInformationItem2 {
-  border: 1px solid black;
-  border-radius: 0px 24px 0px 0px;
-  background-color: #c4c4c4;
+  background-color: #00af04;
 }
 
 .homeInformationItem3 {
-  border: 1px solid black;
-  border-radius: 0px 0px 0px 24px;
-  background-color: #c4c4c4;
+  background-color: #306964;
 }
 
 .homeInformationItem4 {
-  border: 1px solid black;
-  border-radius: 0px 0px 24px 0px;
-  background-color: #a4a4a4;
+  border: 1px solid transparent;
+  border-radius: 0px 30px 30px 0px;
+  background-color: #00af04;
 }

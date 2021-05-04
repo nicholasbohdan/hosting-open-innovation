@@ -17,15 +17,16 @@ export default function Login() {
       <div className={styles.grid_container}>
         <div className={styles.loginLeft}></div>
         <div className={styles.loginRight}>
-        <h3 style={{ textAlign: 'center' }}>Kalbe Idea Platform</h3>
-        <p style={{ textAlign: 'center' }}>
+        <h1 style={{ color:"#306964" }}>Kalbe Idea Platform</h1>
+        <p>
           Lorem ipsum dolor sit amet,
           consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <Formik
           initialValues={{
-            firstName: '',
+            email: '',
+            password: '',
           }}
           validationSchema={schema}
           onSubmit={handleOnSubmit}
@@ -36,15 +37,14 @@ export default function Login() {
           /* and other goodies */
           }) => (
               <Form onSubmit={handleSubmit} id={'login'}>
-                  <div style={{padding: '1rem'}}>
-                    <div>
-                      {/* <Field id="firstName" name="firstName" placeholder="Jane" handleblur={handleblur} /> */}
+                  <div>
                     <div>
                       <div className={styles.fieldLogin}>
                         <Textfield
                           id={'email'}
                           name={'email'}
                           label={'Email'}
+                          placeholder={'Masukan Email'}
                           type={'email'}
                           handleblur={handleblur} 
                         />
@@ -54,14 +54,15 @@ export default function Login() {
                           id={'password'}
                           name={'password'}
                           label={'Password'}
+                          placeholder={'Masukan Password'}
                           type={'password'}
                           handleblur={handleblur} 
                         />
                       </div>
-                      
-                    </div>
                     <button className={styles.buttonLogin} type="submit" form={'login'}>Login</button>
                     <div className={styles.forgetPassword}>Forget Password</div>
+                      
+                    </div>
                       {/* <Button
                         color="secondary"
                         variant={'outlined'}
@@ -79,7 +80,6 @@ export default function Login() {
                         onClick={this.handleNext}>
                         Next
                       </Button> */}
-                    </div>
                   </div>
               </Form>
           )}

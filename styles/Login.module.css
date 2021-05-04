@@ -7,7 +7,7 @@
 
 .forgetPassword{
   padding-left: 12;
-  text-decoration: underline;
+  text-decoration: none;
   text-align: center;
   width: 100%;
 }
@@ -30,17 +30,23 @@
   }
   .loginRight {
     background-color: #ffffff;
-    padding: 120px 20px 20px 20px;
+    padding: 160px 20px 20px 20px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
     /* height: 100%; */
   }
   .buttonLogin{
     width: 100%;
-    padding: 12px;
-    margin: 2px 12px 2px 12px;
+    background-color: #00af04;
+    color: white;
+    /* padding: 12px; */
+    padding: 12px 0px 12px 6px;
+    margin: 12px 0px 12px 0px;
+    /* margin: 2px 12px 2px 12px; */
   }
   .fieldLogin{
     width: 100%;
-    padding: 12px;
   }
 }
 
@@ -65,6 +71,8 @@
   }
   .buttonLogin{
     width: 100%;
+    background-color: #00af04;
+    color: white;
     padding: 12px;
     margin: 12px 12px 12px 0px;
   }

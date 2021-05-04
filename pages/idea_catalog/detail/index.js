@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import React from 'react';
-import styles from '../../../styles/IdeaCatalog.module.css';
+import styles from '../../../styles/ideaCatalog.module.css';
 import Header from '../../../components/header';
+import Footer from '../../../components/footer';
 
 export default function DetailIdea() {
   const [permission, setPermission] = React.useState('0')
@@ -440,6 +441,7 @@ export default function DetailIdea() {
       </div>
     </div>
     )}
+    <Footer />
   </div>
   )
 }

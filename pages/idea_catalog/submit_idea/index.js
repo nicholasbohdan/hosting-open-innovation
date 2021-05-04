@@ -2,12 +2,13 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { Formik, Field, Form } from 'formik';
 import * as yup from 'yup';
-import styles from '../../../styles/IdeaCatalog.module.css';
+import styles from '../../../styles/ideaCatalog.module.css';
 import Header from '../../../components/header';
 import Textfield from '../../../components/textfield';
 import SelectField from '../../../components/selectfield';
 import Textarea from '../../../components/textarea';
 import RadioButton from '../../../components/radiobutton';
+import Footer from '../../../components/footer';
 
 const schema = yup.object().shape({
   firstName: yup.string().required('Name Is Required'),
@@ -195,6 +196,7 @@ export default function IdeaCatalogHome() {
           )}
           </Formik>
     </div>
+    <Footer />
   </div>
   )
 }

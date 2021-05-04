@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../../../styles/ChatComponent.module.css';
 import Header from '../../../components/header';
+import Footer from '../../../components/footer';
 
 export default function ChatInbox() {
   const handleOnSubmit = (value) => {
@@ -64,6 +65,7 @@ export default function ChatInbox() {
             </div>
         </div>
     </div>
+    <Footer />
   </div>
   )
 }

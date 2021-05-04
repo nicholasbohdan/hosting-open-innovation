@@ -1,8 +1,38 @@
 import Head from 'next/head'
+import React, { useState, useContext, useEffect } from "react";
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header';
 
+import { getBanner, getMenu, } from "../../helper";
+import Footer from '../../components/footer';
+
 export default function Home() {
+  const [banner, setBanner] = useState();
+  useEffect(() => {
+    // const userData = JSON.parse(localStorage.getItem("user"));
+    // if (userData) {
+      // actions.userLogin(userData);
+      getBanner()
+        .then((data) => {
+          setBanner(data);
+          console.log(data)
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+      getMenu()
+        .then((data) => {
+          setBanner(data);
+          console.log(data)
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    // } else {
+    //   Router.push("/");
+    // }
+  }, []);
+  console.log(banner)
   return (
     <div>
     <Head>
@@ -289,15 +319,16 @@ export default function Home() {
           <p>Author who submitted their ideas</p>
         </div>
         <div className={styles.homeInformationItem3}>
-          <h4>100+</h4>
-          <p>Company challenge</p>
-        </div>
-        <div className={styles.homeInformationItem4}>
           <h4>92%</h4>
           <p>Challenges Solved</p>
         </div>
+        <div className={styles.homeInformationItem4}>
+          <h4>100+</h4>
+          <p>Company challenge</p>
+        </div>
       </div>
     </div>
+    <Footer />
   </div>
   )
 }

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { Formik, Field, Form } from 'formik';
 import * as yup from 'yup';
-import styles from '../../../styles/ideaCatalog.module.css';
+import styles from '../../../styles/IdeaCatalog.module.css';
 import Header from '../../../components/header';
 import Textfield from '../../../components/textfield';
 import SelectField from '../../../components/selectfield';

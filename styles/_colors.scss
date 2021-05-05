@@ -1,0 +1,112 @@
+.bg-kalbe-green {
+  background-color: #00af04;
+  border-color: transparent;
+
+  &:hover {
+    background-color: #00af04;
+    border-color: transparent;
+  }
+}
+
+.bg-kalbe-red {
+  background-color: #f15038;
+}
+
+.bg-kalbe-yellow {
+  background-color: #ffcd1a;
+}
+
+.bg-kalbe-white {
+  background-color: #ffffff;
+
+  &:visited {
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+  }
+  
+  &:link {
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+  }
+}
+
+.bg-kalbe-lightGrey {
+  background-color: #fafafa;
+}
+
+.bg-kalbe-darkGrey {
+  background-color: #909090;
+}
+
+.bg-kalbe-black {
+  background-color: #222222;
+}
+
+.bg-kalbe-teal {
+  background-color: #306964;
+}
+
+.bg-kalbe-orange {
+  background-color: #fd9800;
+}
+
+.bg-profile-gradient {
+  background: linear-gradient(
+      262.98deg,
+      rgba(255, 255, 255, 0.6) 1.61%,
+      rgba(255, 255, 255, 0) 104.91%
+    ),
+    #00af04;
+}
+
+.bg-kalbe-green-transparent {
+  background-color: rgba(0, 175, 4, 0.05);
+}
+
+.bg-kalbe-orange-transparent {
+  background-color: rgba(253, 152, 0, 0.05);
+}
+
+.bg-kalbe-orange-transparent15 {
+  background-color: rgba(253, 152, 0, 0.15);
+}
+
+.bg-kalbe-blue-transparent {
+  background-color: rgba(41, 17, 255, 0.05);
+}
+
+.bg-kalbe-fuchsia-transparent {
+  background-color: rgba(239, 93, 168, 0.05);
+}
+
+.bg-kalbe-status {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 205, 26, 0.1),
+      rgba(255, 205, 26, 0.1)
+    ),
+    #ffffff;
+  border: 1px solid rgba(255, 205, 26, 0.8);
+}
+
+.border-kalbe-green {
+  border-color: #00af04;
+}
+
+.border-kalbe-white {
+  border-color: #ffffff;
+
+  &:hover {
+    border-color: #ffffff;
+  }
+  
+  &:focus {
+    border-color: #ffffff;
+  }
+}

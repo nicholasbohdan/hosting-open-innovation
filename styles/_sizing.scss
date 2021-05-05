@@ -1,0 +1,61 @@
+.border-radius-6 {
+  border-radius: 6px;
+}
+
+.border-radius-8 {
+  border-radius: 8px;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+.border-radius-12 {
+  border-radius: 12px;
+}
+
+.border-radius-top-12 {
+  border-radius: 12px 12px 0 0;
+}
+
+.border-radius-20 {
+  border-radius: 20px;
+}
+
+.border-radius-50 {
+  border-radius: 50%;
+}
+
+.height-48 {
+  height: 3em;
+}
+
+.height-56 {
+  height: 3.5em;
+}
+
+.progressBar-height {
+  height: 6px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-ratio-profileForm {
+  padding-top: 38%;
+}
+
+.image-ratio-ideasCard {
+  padding-top: 58%;
+}
+
+.image-ratio-konvensiCard {
+  padding-top: 72%;
+}
+
+.image-inside {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}

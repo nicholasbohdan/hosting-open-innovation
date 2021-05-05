@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const CreateNavItem = ({ href, navText, currentPosition }) => (
-  <Link className="nav-item" href={`/${href}`}>
+  <Link className="nav-item" href={`/profile${href}`}>
     <a
       className={`nav-link ${
         currentPosition == href

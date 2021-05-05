@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const CreateNavItem = ({ href, navText, currentPosition, bottomBorder }) => (
-  <Link href={`/${href}`}>
+  <Link href={`/profile/${href}`}>
     <a
       className={`body-copy ${
         currentPosition === href
@@ -22,13 +22,13 @@ const ProfileNavCard = ({ currentPosition }) => (
       Menu
     </p>
     <hr className="mx-3 my-0 py-0" />
-    <CreateNavItem href="profile/ideas" navText="Ideas" currentPosition={currentPosition} bottomBorder={0} />
+    <CreateNavItem href="ideas" navText="Ideas" currentPosition={currentPosition} bottomBorder={0} />
     <hr className="mx-3 my-0 py-0" />
-    <CreateNavItem href="profile/konvensiInovasi" navText="Konvensi Inovasi" currentPosition={currentPosition} bottomBorder={0} />
+    <CreateNavItem href="konvensiInovasi" navText="Konvensi Inovasi" currentPosition={currentPosition} bottomBorder={0} />
     <hr className="mx-3 my-0" />
-    <CreateNavItem href="profile/achievements" navText="Achievements" currentPosition={currentPosition} bottomBorder={0} />
+    <CreateNavItem href="achievements" navText="Achievements" currentPosition={currentPosition} bottomBorder={0} />
     <hr className="mx-3 my-0" />
-    <CreateNavItem href="profile/stats" navText="Stats" currentPosition={currentPosition} bottomBorder={2} />
+    <CreateNavItem href="stats" navText="Stats" currentPosition={currentPosition} bottomBorder={2} />
   </div>
 );
 

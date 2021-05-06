@@ -3,6 +3,7 @@ import ProfileNavCard from "@/components/shared/ProfileNavCard";
 import { Col, Row } from "reactstrap";
 import ReactResizeDetector from "react-resize-detector";
 import Header from "components/header";
+import Footer from "components/Footer";
 
 const BaseLayout = (props) => {
   return (
@@ -42,6 +43,7 @@ const BaseLayout = (props) => {
               </Col>
             </Row>
           </div>
+          <Footer />
         </>
       )}
     </ReactResizeDetector>

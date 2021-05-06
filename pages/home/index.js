@@ -4,7 +4,7 @@ import styles from '../../styles/Home.module.css'
 import Header from '../../components/header';
 
 import { getBanner, getMenu, } from "../../helper";
-import Footer from '../../components/footer';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   const [banner, setBanner] = useState();

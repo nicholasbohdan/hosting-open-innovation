@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../../../styles/IdeaCatalog.module.css';
 import Header from '../../../components/header';
 import FilterByTopic from '../../../components/filterbytopic';
-import Footer from '../../../components/footer';
+import Footer from '../../../components/Footer';
 
 export default function IdeaCatalogHome() {
   const handleOnSubmit = (value) => {

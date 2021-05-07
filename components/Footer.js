@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const CreateFooterItem = ({ last, href, itemName }) => (
@@ -16,14 +17,14 @@ const CreateSocialItem = ({ href, socialName }) => (
   <div className="width-20">
     <Link href={href}>
       <a>
-        <img src={`/logo/${socialName}-footer.png`} />
+        <Image src={`/logo/${socialName}-footer.png`} width={36} height={36} />
       </a>
     </Link>
   </div>
 );
 
 const Footer = () => (
-  <>
+  <div className="pt-4">
     <div className="bg-kalbe-lightGrey">
       <div className="container d-flex py-4">
         <div className="width-20 d-flex flex-column">
@@ -70,7 +71,7 @@ const Footer = () => (
         </p>
       </div>
     </div>
-  </>
+  </div>
 );
 
 export default Footer;

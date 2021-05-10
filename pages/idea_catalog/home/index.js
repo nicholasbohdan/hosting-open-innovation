@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../../../styles/IdeaCatalog.module.css';
-import Header from 'components/header';
+import Header from 'components/Header';
 import Footer from 'components/Footer';
 import { Row } from 'reactstrap';
 import IdeasCard from 'components/shared/IdeasCard';

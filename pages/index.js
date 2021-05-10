@@ -1,15 +1,15 @@
 import Head from "next/head";
 import React, { useState, useContext, useEffect } from "react";
 import styles from "../styles/Home.module.css";
-import Header from "../components/header";
+import Header from "../components/Header";
 
 import { getBanner, getMenu, } from "../helper";
-import Footer from '@/components/Footer';
-import Banner from 'components/banner';
-import TopGiverList from 'components/topgiver';
-import IdeasCard from "@/components/shared/IdeasCard";
+import Footer from '../components/Footer';
+import Banner from '../components/Banner';
+import TopGiverList from '../components/Topgiver';
+import IdeasCard from "../components/shared/IdeasCard";
 import { Col, Row } from "reactstrap";
-import IdeasCatalogCard from "components/shared/IdeasCatalogCard";
+import IdeasCatalogCard from "../components/shared/IdeasCatalogCard";
 import Link from "next/link";
 
 export default function Home() {

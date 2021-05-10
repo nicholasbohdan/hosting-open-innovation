@@ -1,79 +1,76 @@
-import Head from 'next/head'
+import Link from "next/link";
 
-export default function Footer() {
-  return (
-    <div>
-        <div style={{ padding: 20, marginTop: 20, backgroundColor: '#fbfbfb' }}>
-            <div style={{ margin: '0 auto', width: '100%', maxWidth: '1000px' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '80% 20%' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '25% 25% 25% 25%' }}>
-                        <div>
-                            Home
-                            <div>
-                                Trending Ideas
-                            </div>
-                            <div>
-                                Top 10 Idea Giver
-                            </div>
-                            <div>
-                                Learn More
-                            </div>
-                            <div>
-                                Inbox
-                            </div>
-                            <div>
-                                Notification
-                            </div>
-                        </div>
-                        <div>
-                            Idea Catalog
-                            <div>
-                                All Topics
-                            </div>
-                            <div>
-                                Submit Idea
-                            </div>
-                            <div>
-                                Download Guide
-                            </div>
-                        </div>
-                        <div>
-                            Konvensi Inovasi
-                            <div>
-                                Participant List
-                            </div>
-                            <div>
-                                Join Competition
-                            </div>
-                        </div>
-                        <div>
-                            Profile
-                            <div>
-                                My Ideas
-                            </div>
-                            <div>
-                                My Konvensi Inovasi
-                            </div>
-                            <div>
-                                Achievement
-                            </div>
-                            <div>
-                                Stats
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        Kalbe
-                    </div>
-                </div>
-            </div>
+const CreateFooterItem = ({ last, href, itemName }) => (
+  <Link href={href}>
+    <a
+      className={`body-copy text-kalbe-teal text-decoration-none ${
+        !last && "mb-2"
+      }`}
+    >
+      {itemName}
+    </a>
+  </Link>
+);
+
+const CreateSocialItem = ({ href, socialName }) => (
+  <div className="width-20">
+    <Link href={href}>
+      <a>
+        <img src={`/logo/${socialName}-footer.png`} />
+      </a>
+    </Link>
+  </div>
+);
+
+const Footer = () => (
+  <>
+    <div className="bg-kalbe-lightGrey">
+      <div className="container d-flex py-4">
+        <div className="width-20 d-flex flex-column">
+          <h3 className="heading3 text-kalbe-teal">Home</h3>
+          <CreateFooterItem href="#" itemName="Trending Ideas" />
+          <CreateFooterItem href="#" itemName="Top 10 Ideas Giver" />
+          <CreateFooterItem href="#" itemName="Learn More" />
+          <CreateFooterItem href="#" itemName="Inbox" />
+          <CreateFooterItem last href="#" itemName="Notifications" />
         </div>
-        <div style={{ backgroundColor: '#306964' }}>
-            <div style={{ padding: 20, margin: '0 auto', width: '100%', maxWidth: '1000px', color: 'white' }}>
-                2021 Hak Cipta Terpelihara PT Kalbe Farma Tbk
-            </div>
+        <div className="width-20 d-flex flex-column">
+          <h3 className="heading3 text-kalbe-teal">Idea Catalog</h3>
+          <CreateFooterItem href="#" itemName="All Topics" />
+          <CreateFooterItem href="#" itemName="Submit Idea" />
+          <CreateFooterItem last href="#" itemName="Download Guide" />
         </div>
+        <div className="width-20 d-flex flex-column">
+          <h3 className="heading3 text-kalbe-teal">Konvensi Inovasi</h3>
+          <CreateFooterItem href="#" itemName="Participant List" />
+          <CreateFooterItem last href="#" itemName="Join Competition" />
+        </div>
+        <div className="width-20 d-flex flex-column">
+          <h3 className="heading3 text-kalbe-teal">Profile</h3>
+          <CreateFooterItem href="#" itemName="My Ideas" />
+          <CreateFooterItem href="#" itemName="My Konvensi Inovasi" />
+          <CreateFooterItem href="#" itemName="Achievements" />
+          <CreateFooterItem last href="#" itemName="Stats" />
+        </div>
+        <div className="width-20">
+          <img src="/logo/kalbe-farma-footer.png" className="mb-3" />
+          <div className="d-flex">
+              <CreateSocialItem href="#" socialName="facebook" />
+              <CreateSocialItem href="#" socialName="twitter" />
+              <CreateSocialItem href="#" socialName="instagram" />
+              <CreateSocialItem href="#" socialName="youtube" />
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+    <div className="bg-kalbe-teal">
+      <div className="container d-flex py-3">
+        <p className="body-copy text-kalbe-white m-0">
+          © 2021 Hak Cipta Terpelihara PT Kalbe Farma Tbk
+        </p>
+      </div>
+    </div>
+  </>
+);
 
+export default Footer;

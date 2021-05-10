@@ -36,7 +36,7 @@ const LevelDetails = () => {
   let currentValue = 15000;
 
   return (
-    <BaseLayoutFull>
+    <BaseLayoutFull backOnly>
       <div
         className="w-100"
         style={{ height: "120px", backgroundColor: "#4C41D8", opacity: "0.1" }}

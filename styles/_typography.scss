@@ -107,10 +107,18 @@
 
 .text-kalbe-teal {
   color: #306964;
+
+  &:hover {
+    color: #306964;
+  }
 }
 
 .text-kalbe-orange {
   color: #fd9800;
+}
+
+.text-kalbe-white {
+  color: #ffffff;
 }
 
 .text-kalbe-blue {

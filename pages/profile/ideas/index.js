@@ -1,6 +1,5 @@
 import BaseLayout from "@/components/layouts/BaseLayout";
 import IdeasCard from "@/components/shared/IdeasCard";
-import Header from "components/header";
 import { Row } from "reactstrap";
 
 const Ideas = () => {

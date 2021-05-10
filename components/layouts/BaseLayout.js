@@ -2,8 +2,7 @@ import ProfileCard from "@/components/shared/ProfileCard";
 import ProfileNavCard from "@/components/shared/ProfileNavCard";
 import { Col, Row } from "reactstrap";
 import ReactResizeDetector from "react-resize-detector";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import Header from "components/header";
 
 const BaseLayout = (props) => {
   return (
@@ -11,7 +10,7 @@ const BaseLayout = (props) => {
       {({ width }) => (
         <>
           <Header />
-          <div className={`container ${width >= 576 && "mt-4"} ${props.border && "mb-4"}`}>
+          <div className={`container ${width >= 576 && "mt-4"}`}>
             <Row className="align-items-start">
               <Col
                 xl="3"
@@ -43,7 +42,6 @@ const BaseLayout = (props) => {
               </Col>
             </Row>
           </div>
-          <Footer />
         </>
       )}
     </ReactResizeDetector>

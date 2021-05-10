@@ -1,4 +1,11 @@
-import { Form, FormGroup, Label, Input, FormText, Button } from "reactstrap";
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  FormText,
+  Button,
+} from "reactstrap";
 import { useState } from "react";
 import { Camera, ChevronDown } from "react-iconly";
 
@@ -23,9 +30,11 @@ const ProfileForm = () => {
         <Label className="label-kalbe-form" for="profilePicture">
           Profile Picture
         </Label>
-        <div className="w-100 image-container image-ratio-profileForm bg-kalbe-lightGrey border-kalbe-profileForm border-radius-10 d-flex justify-content-center">
-          <div className="w-100 h-100 bg-profileForm-gradient image-inside border-radius-10"></div>
-          <img src={avatar} className="w-auto h-100 image-inside" />
+        <div className="w-100 image-container image-ratio-profileForm border-radius-10">
+          <img
+            src={avatar}
+            className="w-100 h-100 image-inside border-radius-10"
+          />
           <Button
             tag={Label}
             className="float-right m-0 p-0 shadow d-flex justify-content-center align-items-center"

@@ -107,7 +107,7 @@ const KonvensiInovasiCard = ({ currentState }) => {
             <a className="text-kalbe-black">
               <Row noGutters className="align-items-center">
                 <Col xs="1">
-                  <img src="/images/link-icon.png" height={12} className="m-0" />
+                  <img src="images/link-icon.png" height={12} className="m-0" />
                 </Col>
                 <Col xs="11">
                   <p className="detail-text text-truncate mb-0">

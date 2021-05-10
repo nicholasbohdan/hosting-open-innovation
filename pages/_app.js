@@ -1,6 +1,6 @@
-// import '@/styles/globals.css'
-// import '@/styles/Login.module.css'
-// import { Store } from "@/store";
+// import '../styles/globals.css'
+// import '../styles/Login.module.css'
+// import { Store } from "../store";
 
 // function MyApp({ Component, pageProps }) {
 //   return (
@@ -14,10 +14,10 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/main.scss";
-import { Store } from "@/store";
+import { Store } from "../store";
 import Head from "next/head";
-import '@/styles/globals.css'
-import '@/styles/Login.module.css'
+import '../styles/globals.css'
+import '../styles/Login.module.css'
 import ResizeObserver from "resize-observer-polyfill";
 import '@/components/dummy-data'
 

@@ -2,7 +2,7 @@ import ProfileCard from "@/components/shared/ProfileCard";
 import ProfileNavCard from "@/components/shared/ProfileNavCard";
 import { Col, Row } from "reactstrap";
 import ReactResizeDetector from "react-resize-detector";
-import Header from "components/header";
+import Header from "components/Header";
 
 const BaseLayout = (props) => {
   return (

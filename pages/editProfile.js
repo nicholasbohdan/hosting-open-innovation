@@ -4,7 +4,7 @@ import { Row, Col } from "reactstrap";
 
 const EditProfile = () => {
   return (
-    <BaseLayoutFull withContainer>
+    <BaseLayoutFull backOnly withContainer>
       <h1 className="heading1">Edit Profile</h1>
       <Row>
         <Col lg="6" md="8" xs="12">

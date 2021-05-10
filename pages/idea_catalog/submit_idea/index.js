@@ -8,7 +8,7 @@ import Textfield from '../../../components/textfield';
 import SelectField from '../../../components/selectfield';
 import Textarea from '../../../components/textarea';
 import RadioButton from '../../../components/radiobutton';
-import Footer from '../../../components/footer';
+import Footer from '../../../components/Footer';
 
 const schema = yup.object().shape({
   firstName: yup.string().required('Name Is Required'),

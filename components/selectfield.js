@@ -1,5 +1,5 @@
 import { Field } from 'formik';
-import styles from '../styles/CustomComponent.module.css';
+import styles from '@/styles/CustomComponent.module.css';
 
 export default function SelectField(props){
     const { handleblur, placeholder, label, id, name, type, options, ...other } = props

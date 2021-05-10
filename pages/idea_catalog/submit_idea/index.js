@@ -2,13 +2,13 @@ import Head from 'next/head'
 import { useState } from 'react'
 import { Formik, Field, Form } from 'formik';
 import * as yup from 'yup';
-import styles from '../../../styles/IdeaCatalog.module.css';
-import Header from '../../../components/Header';
-import Textfield from '../../../components/Textfield';
-import SelectField from '../../../components/Selectfield';
-import Textarea from '../../../components/Textarea';
-import RadioButton from '../../../components/Radiobutton';
-import Footer from '../../../components/Footer';
+import styles from '@/styles/IdeaCatalog.module.css';
+import Header from '@/components/Header';
+import Textfield from '@/components/Textfield';
+import SelectField from '@/components/Selectfield';
+import Textarea from '@/components/Textarea';
+import RadioButton from '@/components/Radiobutton';
+import Footer from '@/components/Footer';
 
 const schema = yup.object().shape({
   firstName: yup.string().required('Name Is Required'),

@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import styles from '../../../styles/IdeaCatalog.module.css';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
+import styles from '@/styles/IdeaCatalog.module.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { Row } from 'reactstrap';
-import IdeasCard from '../../../components/shared/IdeasCard';
-import BaseLayout from '../../../components/layouts/BaseLayout';
-import BaseLayoutFull from '../../../components/layouts/BaseLayoutFull';
+import IdeasCard from '@/components/shared/IdeasCard';
+import BaseLayout from '@/components/layouts/BaseLayout';
+import BaseLayoutFull from '@/components/layouts/BaseLayoutFull';
 
 export default function IdeaCatalogHome() {
   const handleOnSubmit = (value) => {

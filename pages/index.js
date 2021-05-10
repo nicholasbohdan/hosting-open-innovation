@@ -7,8 +7,9 @@ import { getBanner, getMenu, } from "../helper";
 import Footer from '../components/Footer';
 import Banner from 'components/Banner';
 import TopGiverList from 'components/Topgiver';
-import IdeasCatalogCard from "components/shared/IdeasCatalogCard";
+import IdeasCard from "@/components/shared/IdeasCard";
 import { Row } from 'reactstrap';
+import IdeasCatalogCard from 'components/shared/IdeasCatalogCard';
 
 export default function Home() {
   const [banner, setBanner] = useState();
@@ -69,7 +70,9 @@ export default function Home() {
                 />
               </div>
             </div>
-            <button className={styles.btn}><i class="material-icons">arrow_forward_ios</i></button>
+            <button className={styles.btn}>
+              <i className="material-icons">arrow_forward_ios</i>
+            </button>
             {/* <button>Next</button> */}
           </div>
       </div>
@@ -80,9 +83,9 @@ export default function Home() {
       </div>
       <div className={styles.trendingIdeasListContainer}>
         <Row>
-          <IdeasCatalogCard />
-          <IdeasCatalogCard />
-          <IdeasCatalogCard />
+          <IdeasCatalogCard />  
+          <IdeasCatalogCard />  
+          <IdeasCatalogCard />  
           <IdeasCatalogCard />
         </Row>
         

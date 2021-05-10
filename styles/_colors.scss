@@ -65,6 +65,14 @@
     #00af04;
 }
 
+.bg-profileForm-gradient {
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(251, 251, 251, 0) 100%
+  );
+}
+
 .bg-kalbe-green-transparent {
   background-color: rgba(0, 175, 4, 0.05);
 }
@@ -97,6 +105,10 @@
 
 .border-kalbe-green {
   border-color: #00af04;
+}
+
+.border-kalbe-profileForm {
+  border: 1px solid #EFEFEF;
 }
 
 .border-kalbe-white {

@@ -1,447 +1,450 @@
-import Head from 'next/head'
-import React from 'react';
-import styles from '../../../styles/IdeaCatalog.module.css';
-import Header from '../../../components/Header';
-import Footer from '../../../components/Footer';
+import Head from "next/head";
+import React from "react";
+import styles from "../../../styles/IdeaCatalog.module.css";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
+import TeamMember from "components/shared/TeamMember";
+
+const teamMemberData = [
+  {
+    TeamName: "test1",
+    TeamMember: ["orang1"],
+    state: "NoTeam",
+    TeamMemberName: [
+      {
+        orang: "sendiri",
+        photo: "/images/profile-picture.jpg",
+        role: "introvert",
+      },
+    ],
+  },
+  {
+    TeamName: "test2",
+    TeamMember: ["orang2", "orang3"],
+    state: "TeamNonVerif",
+    TeamMemberName: [
+      {
+        orang: "sdsdsdsdsdsdsdsdsds",
+        photo: "/images/profile-picture.jpg",
+        role: "ketua",
+      },
+      {
+        orang: "bedua",
+        photo: "/images/profile-picture.jpg",
+        role: "beban2",
+      },
+      {
+        orang: "betiga",
+        photo: "/images/profile-picture.jpg",
+        role: "beban3",
+      },
+    ],
+  },
+  {
+    TeamName: "test3",
+    TeamMember: ["orang4", "orang5", "orang6"],
+    state: "TeamVerif",
+    TeamMemberName: [
+      {
+        orang: "emtpa",
+        photo: "/images/profile-picture.jpg",
+        role: "ketua",
+      },
+      {
+        orang: "asdasd",
+        photo: "/images/profile-picture.jpg",
+        role: "wakil ketua",
+      },
+      {
+        orang: "lima",
+        photo: "/images/profile-picture.jpg",
+        role: "gabut",
+      },
+    ],
+  },
+];
 
 export default function DetailIdea() {
-  const [permission, setPermission] = React.useState('0')
+  const [permission, setPermission] = React.useState("0");
   const handleOnSubmit = (value) => {
-    console.log(value)
-  }
+    console.log(value);
+  };
   return (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    </Head>
-    <Header />
-    <div className={styles.homeIdeaCatalogSubHeader}>
-       Back
-    </div>
-    {permission === '0' ? ( // user page
-    <div className={styles.ideaCatalogDetailContainer}>
-      <div>
-        <div className={styles.coverImgContainer}>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.coverImg}
-          />
-        </div>
-        <div style={{ display: 'flex' }}>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.avatar} 
-          />
+    <div>
+      <Head>
+        <title>Home</title>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </Head>
+      <Header />
+      <div className={styles.homeIdeaCatalogSubHeader}>Back</div>
+      {permission === "0" ? ( // user page
+        <div className={styles.ideaCatalogDetailContainer}>
           <div>
-            <div>
-              Arya Wukti
-            </div>
-            <div>
-              Lv. 3 The Inovator
-            </div>
-          </div>
-        </div>
-        <div>
-          2 feb 2021
-        </div>
-        <div>
-          Kalbe Chatbot untk Pelayanan Customer Sistem 4.0
-        </div>
-        <div>
-          <p style={{ width: '100%' }}>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className={styles.coverImgContainer}>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.coverImg}
-          />
-        </div>
-        <div>
-          <p style={{ width: '100%' }}>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        
-        <div>
-          <p style={{ width: '100%' }}>
-            Lorem ipsum dolor sit amet,
-          </p>
-        </div>
-        <div style={{
-          display: 'grid',
-          gridAutoFlow: 'column',
-          justifyContent: 'space-between'
-        }}>
-          <div> 212 47 </div>
-          <div> 11 comment</div>
-        </div>
-        <div style={{
-          display: 'grid',
-          gridAutoFlow: 'column'
-        }}>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Like</a>
-          </div>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Comment</a>
-          </div>  
-        </div>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '10% 90%',
-          justifyContent: 'space-between'
-        }}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <div>
-            <div style={{
-              display: 'grid',
-              gridAutoFlow: 'column',
-              justifyContent: 'space-between'
-            }}>
-              <div>Shasa Junita</div>
-              <div>01 Feb 21</div>
-            </div>
-            <div>
-              asdasdasdasdasdsadasdasdasdasdasd
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          Topics
-          <div className={styles.containerTopics}>
-            <div className={styles.itemTopics}>
-              Product/Service
-            </div>
-            <div className={styles.itemTopics}>
-              Chat Bot
-            </div>
-          </div>
-        </div>
-        <div style={{ paddingTop: 14 }}>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'auto auto',
-            justifyContent: 'space-between'
-          }}>
-            <div>
-              Attachment
-            </div>
-            <div>
-            Download All
-            </div>
-          </div>
-          <div className={styles.containerAttachment}>
-            <div className={styles.itemAttachment}>
-              <div>
-                <p>Chat Bot Planning.pptx</p>
-              </div>
-              <div style={{ margin: 12 }}>
-                <i class="material-icons">file_download</i>
-              </div>
-              {/* <p>Product</p><p>Product</p> */}
-            </div>
-            <div className={styles.itemAttachment}>
-              <div>
-                <p>videoperaga.mp4</p>
-              </div>
-              <div style={{ margin: 12 }}>
-                <i class="material-icons">file_download</i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style={{ paddingTop: 14 }}>
-          <div className={styles.teamMemberContainer}>
-            <div>
-              Team Member - Briliant Boys
-            </div>
-            <div style={{ display: 'flex', padding: 10 }}>
+            <div className={styles.coverImgContainer}>
               <img
-                src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
+                src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
                 alt=""
-                className={styles.avatar} 
+                className={styles.coverImg}
+              />
+            </div>
+            <div style={{ display: "flex" }}>
+              <img
+                src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                alt=""
+                className={styles.avatar}
               />
               <div>
-                <div>
-                  Arya Wukti
+                <div>Arya Wukti</div>
+                <div>Lv. 3 The Inovator</div>
+              </div>
+            </div>
+            <div>2 feb 2021</div>
+            <div>Kalbe Chatbot untk Pelayanan Customer Sistem 4.0</div>
+            <div>
+              <p style={{ width: "100%" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div className={styles.coverImgContainer}>
+              <img
+                src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                alt=""
+                className={styles.coverImg}
+              />
+            </div>
+            <div>
+              <p style={{ width: "100%" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            <div>
+              <p style={{ width: "100%" }}>Lorem ipsum dolor sit amet,</p>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridAutoFlow: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <div> 212 47 </div>
+              <div> 11 comment</div>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridAutoFlow: "column",
+              }}
+            >
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Like</a>
+              </div>
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Comment</a>
+              </div>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "10% 90%",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>
+                <img
+                  src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                  alt=""
+                  className={styles.avatar}
+                />
+              </div>
+              <div>
+                <div
+                  style={{
+                    display: "grid",
+                    gridAutoFlow: "column",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <div>Shasa Junita</div>
+                  <div>01 Feb 21</div>
                 </div>
-                <div>
-                  Lv. 3 The Inovator
+                <div>asdasdasdasdasdsadasdasdasdasdasd</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              Topics
+              <div className={styles.containerTopics}>
+                <div className={styles.itemTopics}>Product/Service</div>
+                <div className={styles.itemTopics}>Chat Bot</div>
+              </div>
+            </div>
+            <div style={{ paddingTop: 14 }}>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "auto auto",
+                  justifyContent: "space-between",
+                }}
+              >
+                <div>Attachment</div>
+                <div>Download All</div>
+              </div>
+              <div className={styles.containerAttachment}>
+                <div className={styles.itemAttachment}>
+                  <div>
+                    <p>Chat Bot Planning.pptx</p>
+                  </div>
+                  <div style={{ margin: 12 }}>
+                    <i class="material-icons">file_download</i>
+                  </div>
+                  {/* <p>Product</p><p>Product</p> */}
+                </div>
+                <div className={styles.itemAttachment}>
+                  <div>
+                    <p>videoperaga.mp4</p>
+                  </div>
+                  <div style={{ margin: 12 }}>
+                    <i class="material-icons">file_download</i>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className={styles.submitIdeaButton}>
-              <a href={'/idea_catalog/submit_idea'}>Request to Join Team</a>
+            <div style={{ paddingTop: 14 }} className={styles.mobileCard}>
+              {teamMemberData.map((data) => {
+                return (
+                  <TeamMember
+                    state={data.state}
+                    data={data}
+                    key={data.TeamName}
+                  />
+                );
+              })}
             </div>
-            <div className={styles.submitIdeaButton}>
-              <a href={'/profile/chat'}>Chat Author</a>
-            </div>  
           </div>
         </div>
-      </div>
-    </div>
-    ): permission === '1' ? ( // waiting verification
-    <div className={styles.ideaCatalogDetailContainer}>
-      <div>
-        <div className={styles.coverImgContainer}>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.coverImg}
-          />
-        </div>
-        <div style={{ display: 'flex' }}>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.avatar} 
-          />
+      ) : permission === "1" ? ( // waiting verification
+        <div className={styles.ideaCatalogDetailContainer}>
           <div>
-            <div>
-              Arya Wukti
-            </div>
-            <div>
-              Lv. 3 The Inovator
-            </div>
-          </div>
-        </div>
-        <div>
-          2 feb 2021
-        </div>
-        <div>
-          Kalbe Chatbot untk Pelayanan Customer Sistem 4.0
-        </div>
-        <div>
-          <p style={{ width: '100%' }}>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-      <div>
-        <div style={{
-          display: 'grid',
-          gridAutoFlow: 'column'
-        }}>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Delete</a>
-          </div>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Edit</a>
-          </div>  
-        </div>
-        <div>
-          Topics
-          <div className={styles.containerTopics}>
-            <div className={styles.itemTopics}>
-              Product/Service
-            </div>
-            <div className={styles.itemTopics}>
-              Chat Bot
-            </div>
-          </div>
-        </div>
-        <div style={{ paddingTop: 14 }}>
-          <div className={styles.teamMemberContainer}>
-            <div>
-              Team Member - Briliant Boys
-            </div>
-            <div style={{ display: 'flex', padding: 10 }}>
+            <div className={styles.coverImgContainer}>
               <img
-                src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
+                src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
                 alt=""
-                className={styles.avatar} 
+                className={styles.coverImg}
+              />
+            </div>
+            <div style={{ display: "flex" }}>
+              <img
+                src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                alt=""
+                className={styles.avatar}
               />
               <div>
-                <div>
-                  Arya Wukti
+                <div>Arya Wukti</div>
+                <div>Lv. 3 The Inovator</div>
+              </div>
+            </div>
+            <div>2 feb 2021</div>
+            <div>Kalbe Chatbot untk Pelayanan Customer Sistem 4.0</div>
+            <div>
+              <p style={{ width: "100%" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              style={{
+                display: "grid",
+                gridAutoFlow: "column",
+              }}
+            >
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Delete</a>
+              </div>
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Edit</a>
+              </div>
+            </div>
+            <div>
+              Topics
+              <div className={styles.containerTopics}>
+                <div className={styles.itemTopics}>Product/Service</div>
+                <div className={styles.itemTopics}>Chat Bot</div>
+              </div>
+            </div>
+            <div style={{ paddingTop: 14 }}>
+              <div className={styles.teamMemberContainer}>
+                <div>Team Member - Briliant Boys</div>
+                <div style={{ display: "flex", padding: 10 }}>
+                  <img
+                    src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                    alt=""
+                    className={styles.avatar}
+                  />
+                  <div>
+                    <div>Arya Wukti</div>
+                    <div>Lv. 3 The Inovator</div>
+                  </div>
                 </div>
-                <div>
-                  Lv. 3 The Inovator
+              </div>
+            </div>
+            <div style={{ paddingTop: 14 }}>
+              <div className={styles.teamMemberContainer}>
+                <div
+                  style={{
+                    display: "grid",
+                    gridAutoFlow: "column",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <div>Idea Status</div>
+                  <div>Verify proses</div>
                 </div>
-              </div>
-            </div> 
-          </div>
-        </div>
-        <div style={{ paddingTop: 14 }}>
-          <div className={styles.teamMemberContainer}>
-            <div style={{
-              display: 'grid',
-              gridAutoFlow: 'column',
-              justifyContent: 'space-between'
-            }}>
-              <div>
-              Idea Status
-              </div>
-              <div>
-              Verify proses
+                <hr />
+                <div>oaskdoaskoaskdoaksaodkosadk</div>
               </div>
             </div>
-            <hr/>
-            <div>
-              oaskdoaskoaskdoaksaodkosadk
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-    ) : ( //publisher page
-    <div className={styles.ideaCatalogDetailContainer}>
-      <div>
-        <div className={styles.coverImgContainer}>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.coverImg}
-          />
-        </div>
-        <div style={{ display: 'flex' }}>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.avatar} 
-          />
+      ) : (
+        //publisher page
+        <div className={styles.ideaCatalogDetailContainer}>
           <div>
-            <div>
-              Arya Wukti
-            </div>
-            <div>
-              Lv. 3 The Inovator
-            </div>
-          </div>
-        </div>
-        <div>
-          2 feb 2021
-        </div>
-        <div>
-          Kalbe Chatbot untk Pelayanan Customer Sistem 4.0
-        </div>
-        <div>
-          <p style={{ width: '100%' }}>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div style={{
-          display: 'grid',
-          gridAutoFlow: 'column',
-          justifyContent: 'space-between'
-        }}>
-          <div> 212 47 </div>
-          <div> 11 comment</div>
-        </div>
-        <div style={{
-          display: 'grid',
-          gridAutoFlow: 'column'
-        }}>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Like</a>
-          </div>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Comment</a>
-          </div>  
-        </div>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '10% 90%',
-          justifyContent: 'space-between'
-        }}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <div>
-            <div style={{
-              display: 'grid',
-              gridAutoFlow: 'column',
-              justifyContent: 'space-between'
-            }}>
-              <div>Shasa Junita</div>
-              <div>01 Feb 21</div>
-            </div>
-            <div>
-              asdasdasdasdasdsadasdasdasdasdasd
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div style={{
-          display: 'grid',
-          gridAutoFlow: 'column'
-        }}>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Delete</a>
-          </div>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Edit</a>
-          </div>  
-        </div>
-        <div>
-          Topics
-          <div className={styles.containerTopics}>
-            <div className={styles.itemTopics}>
-              Product/Service
-            </div>
-            <div className={styles.itemTopics}>
-              Chat Bot
-            </div>
-          </div>
-        </div>
-        <div style={{ paddingTop: 14 }}>
-          <div className={styles.teamMemberContainer}>
-            <div>
-              Team Member - Briliant Boys
-            </div>
-            <div style={{ display: 'flex', padding: 10 }}>
+            <div className={styles.coverImgContainer}>
               <img
-                src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
+                src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
                 alt=""
-                className={styles.avatar} 
+                className={styles.coverImg}
+              />
+            </div>
+            <div style={{ display: "flex" }}>
+              <img
+                src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                alt=""
+                className={styles.avatar}
               />
               <div>
-                <div>
-                  Arya Wukti
+                <div>Arya Wukti</div>
+                <div>Lv. 3 The Inovator</div>
+              </div>
+            </div>
+            <div>2 feb 2021</div>
+            <div>Kalbe Chatbot untk Pelayanan Customer Sistem 4.0</div>
+            <div>
+              <p style={{ width: "100%" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridAutoFlow: "column",
+                justifyContent: "space-between",
+              }}
+            >
+              <div> 212 47 </div>
+              <div> 11 comment</div>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridAutoFlow: "column",
+              }}
+            >
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Like</a>
+              </div>
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Comment</a>
+              </div>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "10% 90%",
+                justifyContent: "space-between",
+              }}
+            >
+              <div>
+                <img
+                  src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                  alt=""
+                  className={styles.avatar}
+                />
+              </div>
+              <div>
+                <div
+                  style={{
+                    display: "grid",
+                    gridAutoFlow: "column",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <div>Shasa Junita</div>
+                  <div>01 Feb 21</div>
                 </div>
-                <div>
-                  Lv. 3 The Inovator
+                <div>asdasdasdasdasdsadasdasdasdasdasd</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              style={{
+                display: "grid",
+                gridAutoFlow: "column",
+              }}
+            >
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Delete</a>
+              </div>
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>Edit</a>
+              </div>
+            </div>
+            <div>
+              Topics
+              <div className={styles.containerTopics}>
+                <div className={styles.itemTopics}>Product/Service</div>
+                <div className={styles.itemTopics}>Chat Bot</div>
+              </div>
+            </div>
+            <div style={{ paddingTop: 14 }}>
+              <div className={styles.teamMemberContainer}>
+                <div>Team Member - Briliant Boys</div>
+                <div style={{ display: "flex", padding: 10 }}>
+                  <img
+                    src="https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151"
+                    alt=""
+                    className={styles.avatar}
+                  />
+                  <div>
+                    <div>Arya Wukti</div>
+                    <div>Lv. 3 The Inovator</div>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div style={{ paddingTop: 14 }}>
+              <div className={styles.submitIdeaButton}>
+                <a href={"/idea_catalog/submit_idea"}>
+                  Submit to Konvensi Inovasi
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div style={{ paddingTop: 14 }}>
-          <div className={styles.submitIdeaButton}>
-            <a href={'/idea_catalog/submit_idea'}>Submit to Konvensi Inovasi</a>
-          </div>
-        </div>
-      </div>
+      )}
+      <Footer />
     </div>
-    )}
-    <Footer />
-  </div>
-  )
+  );
 }

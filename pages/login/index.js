@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Formik, Field, Form } from 'formik';
 import * as yup from 'yup';
-import Textfield from '../../components/textfield';
+import Textfield from '../../components/Textfield';
 import styles from '../../styles/Login.module.css';
 
 const schema = yup.object().shape({

@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../../../styles/IdeaCatalog.module.css';
-import Header from '../../../components/header';
-import FilterByTopic from '../../../components/filterbytopic';
-import Footer from '../../../components/footer';
+import Header from '../../../components/Header';
+import FilterByTopic from '../../../components/Filterbytopic';
+import Footer from '../../../components/Footer';
 import { Row } from 'reactstrap';
 import IdeasCard from 'components/shared/IdeasCard';
 import BaseLayout from 'components/layouts/BaseLayout';

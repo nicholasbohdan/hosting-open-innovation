@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import React from 'react';
-import styles from '@/styles/IdeaCatalog.module.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import styles from '../../../styles/IdeaCatalog.module.css';
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
 
 export default function DetailIdea() {
   const [permission, setPermission] = React.useState('0')

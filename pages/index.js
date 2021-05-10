@@ -69,7 +69,9 @@ export default function Home() {
                 />
               </div>
             </div>
-            <button className={styles.btn}><i class="material-icons">arrow_forward_ios</i></button>
+            <button className={styles.btn}>
+              <i className="material-icons">arrow_forward_ios</i>
+            </button>
             {/* <button>Next</button> */}
           </div>
       </div>

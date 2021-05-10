@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { Formik, Field, Form } from 'formik';
 import * as yup from 'yup';
-import Textfield from '@/@/components/Textfield';
-import styles from '@/@/styles/Login.module.css';
+import Textfield from '@/components/Textfield';
+import styles from '@/styles/Login.module.css';
 
 const schema = yup.object().shape({
   firstName: yup.string().required('Name Is Required'),

@@ -5,6 +5,10 @@ import Header from '../components/header';
 
 import { getBanner, getMenu, } from "../helper";
 import Footer from '../components/footer';
+import Banner from 'components/banner';
+import TopGiverList from 'components/topgiver';
+import IdeasCard from "@/components/shared/IdeasCard";
+import { Row } from 'reactstrap';
 
 export default function Home() {
   const [banner, setBanner] = useState();
@@ -41,29 +45,7 @@ export default function Home() {
     </Head>
     <Header />
     <div className={styles.home}>
-      <div className={styles.bannerHome}>
-        <div>
-          <img
-            src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-            alt=""
-            className={styles.bannerImg}
-          />
-        </div>
-        <div className={styles.bannerAbout}>
-        {/* batas */}
-          <h4>Kalbe Idea Platform</h4>
-          <p style={{ width: '100%' }}>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <div>
-            <button className={styles.buttonSubmit}>Submit Idea</button>
-            <button className={styles.buttonLearnMore}>Learn More</button>
-          </div>
-        </div>
-      </div>
-      
+      <Banner />
       <div className={styles.trendingIdeas}>
         <p>Company Update</p>
       </div>
@@ -97,218 +79,21 @@ export default function Home() {
         <p>See All Ideas</p>
       </div>
       <div className={styles.trendingIdeasListContainer}>
-      <div className={styles.homeIdeaCatalogBorder}>
-        <div className={styles.trendingIdeasList}>
-            <div style={{ display: 'flex' }}>
-              <img
-                src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-                alt=""
-                className={styles.avatar} 
-              />
-              <div style={{ paddingLeft: 12 }}>
-              <p style={{ padding: '4px 0px 0px 0px', margin: 0 }}>Arya Wukti</p>
-              <p style={{ padding: '0px 0px 24px 0px', margin: 0 }}>3 Feb</p>
-              </div>
-            </div>
-          </div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.coverImg}
-            />
-            
-          <div className={styles.trendingIdeasList}>
-            <h4>Kalbe Chatbot</h4>
-            <p style={{ width: '100%' }}>
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-      <div className={styles.homeIdeaCatalogBorder}>
-        <div className={styles.trendingIdeasList}>
-            <div style={{ display: 'flex' }}>
-              <img
-                src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-                alt=""
-                className={styles.avatar} 
-              />
-              <div style={{ paddingLeft: 12 }}>
-              <p style={{ padding: '4px 0px 0px 0px', margin: 0 }}>Arya Wukti</p>
-              <p style={{ padding: '0px 0px 24px 0px', margin: 0 }}>3 Feb</p>
-              </div>
-            </div>
-          </div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.coverImg}
-            />
-            
-          <div className={styles.trendingIdeasList}>
-            <h4>Kalbe Chatbot</h4>
-            <p style={{ width: '100%' }}>
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-      <div className={styles.homeIdeaCatalogBorder}>
-        <div className={styles.trendingIdeasList}>
-            <div style={{ display: 'flex' }}>
-              <img
-                src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-                alt=""
-                className={styles.avatar} 
-              />
-              <div style={{ paddingLeft: 12 }}>
-              <p style={{ padding: '4px 0px 0px 0px', margin: 0 }}>Arya Wukti</p>
-              <p style={{ padding: '0px 0px 24px 0px', margin: 0 }}>3 Feb</p>
-              </div>
-            </div>
-          </div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.coverImg}
-            />
-            
-          <div className={styles.trendingIdeasList}>
-            <h4>Kalbe Chatbot</h4>
-            <p style={{ width: '100%' }}>
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-      <div className={styles.homeIdeaCatalogBorder}>
-        <div className={styles.trendingIdeasList}>
-            <div style={{ display: 'flex' }}>
-              <img
-                src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-                alt=""
-                className={styles.avatar} 
-              />
-              <div style={{ paddingLeft: 12 }}>
-              <p style={{ padding: '4px 0px 0px 0px', margin: 0 }}>Arya Wukti</p>
-              <p style={{ padding: '0px 0px 24px 0px', margin: 0 }}>3 Feb</p>
-              </div>
-            </div>
-          </div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.coverImg}
-            />
-            
-          <div className={styles.trendingIdeasList}>
-            <h4>Kalbe Chatbot</h4>
-            <p style={{ width: '100%' }}>
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
+        <Row>
+          <IdeasCard currentState="Finished" />  
+          <IdeasCard currentState="Finished" />  
+          <IdeasCard currentState="Finished" />  
+          <IdeasCard currentState="Finished" />
+        </Row>
         
       </div>
       
       <div>
         <p>Top Idea Creator</p>
       </div>
-      <div className={styles.topIdeasGiverListContainer}>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-        <div className={styles.topIdeasGiverList}>
-          <div>
-            <img
-              src='https://static.wikia.nocookie.net/divided-destiny/images/8/86/Avatar_Aang.png/revision/latest?cb=20200131101151'
-              alt=""
-              className={styles.avatar} 
-            />
-          </div>
-          <p>Arya Wukti</p>
-          <p>.... Ideas</p>
-        </div>
-      </div>
+      
+      <TopGiverList />
+
       <div className={styles.homeInformation}>
         <div className={styles.homeInformationItem1}>
           <h4>30+</h4>
